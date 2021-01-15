@@ -1,3 +1,5 @@
+![rubycritic](badges/rubycritic_badge_score)
+
 ![BrightCoders Logo](img/logo-bc.png)
 
 # Kata Secret Handshake

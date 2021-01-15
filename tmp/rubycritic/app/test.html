@@ -52,7 +52,7 @@
       </span>
     </div>
     <div>
-      <h3><small>app /</small> secretHandShake.rb</h3>
+      <h3><small>app /</small> test.rb</h3>
     </div>
   </div>
   <!--End Page Title -->
@@ -68,15 +68,15 @@
           </div>
           <div class="code-statistics col-md-11">
             <div class="col-md-3">
-              <div><span class="metric">29</span><small> lines of codes</small></div>
-              <div><span class="metric">4</span><small> methods</small></div>
+              <div><span class="metric">9</span><small> lines of codes</small></div>
+              <div><span class="metric">0</span><small> methods</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">7.1</span><small> complexity/method</small></div>
-              <div><span class="metric">1</span><small> churn</small></div>
+              <div><span class="metric">N/A</span><small> complexity/method</small></div>
+              <div><span class="metric">0</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">28.48</span><small> complexity</small></div>
+              <div><span class="metric">0.0</span><small> complexity</small></div>
               <div><span class="metric">0</span><small> duplications</small></div>
             </div>
           </div>
@@ -88,8 +88,8 @@
             <li><a href="#" id="toggle-code" class="toggle-button button">code</a></li>
             <li class="active">
               <a href="#" id="toggle-smells" class="toggle-button button">
-                3
-                smells
+                0
+                smell
               </a>
             </li>
           </ul>
@@ -97,35 +97,15 @@
       </div>
     </div>
 
-    <code class="prettyprint linenums lang-ruby file-code js-file-code"># frozen_string_literal: true
+    <code class="prettyprint linenums lang-ruby file-code js-file-code">valor = &quot;10001&quot;
 
-# class SecretHandShake
-class SecretHandShake
-  def initialize(convert_Value, dictionary)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Parameter-Name.md" target="_blank"><b>UncommunicativeParameterName</b></a>        </span>      </div>      <span>SecretHandShake#initialize has the parameter name 'convert_Value'</span>          </div>  </li></ol>
-    @convert_Value = convert_Value<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md" target="_blank"><b>UncommunicativeVariableName</b></a>        </span>      </div>      <span>SecretHandShake has the variable name '@convert_Value'</span>          </div>  </li></ol>
-    @dictionary = dictionary
-  end
+valor2 = valor.to_i
+puts valor2
+valor3 = valor2 -10000
+puts valor3
 
-  def convertions
-    @convert_Value.to_s(2)
-  end
-
-  def convertions_to_second_conditional
-    value_converted = convertions.to_i
-    less = value_converted - 10_000
-    less.to_s
-  end
-
-  def verify
-    value = convertions.to_sym
-    value2 = convertions_to_second_conditional.to_sym<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Uncommunicative-Variable-Name.md" target="_blank"><b>UncommunicativeVariableName</b></a>        </span>      </div>      <span>SecretHandShake#verify has the variable name 'value2'</span>          </div>  </li></ol>
-    if @convert_Value &lt; 16
-      return @dictionary[value].inspect if convertions == value.to_s
-    elsif convertions_to_second_conditional == value2.to_s
-      @dictionary[value2].reverse.inspect
-    end
-  end
-end
+value_convert = valor3.to_s(2)
+puts value_convert.to_sym.inspect
 </code>
   </div>
 </div>
