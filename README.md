@@ -1,4 +1,4 @@
-![rubycriticBadges](badges/rubycritic_badge_score)
+![rubycriticBadges](badges/rubycritic_badge_score.svg)
 
 ![BrightCoders Logo](img/logo-bc.png)
 
