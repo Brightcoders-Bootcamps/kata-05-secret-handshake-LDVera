@@ -47,7 +47,7 @@ GEM
     regexp_parser (2.0.3)
     repo-small-badge (0.2.7)
       victor (~> 0.2.8)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
@@ -111,6 +111,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   rake
